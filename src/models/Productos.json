@@ -1,0 +1,35 @@
+[
+  {
+    "title": "producto1",
+    "description": "martillo",
+    "price": 500,
+    "thumbnails": [
+      "./img"
+    ],
+    "code": "bc5402",
+    "stock": 25,
+    "category": "hola",
+    "status": true,
+    "id": 1
+  },
+  {
+    "title": "productoHandle",
+    "description": "producto numero2",
+    "price": "540",
+    "code": "bscv24",
+    "stock": "34",
+    "category": "computacion",
+    "status": true,
+    "id": 2
+  },
+  {
+    "title": "Motosierra",
+    "description": "la motosierra de milei",
+    "price": "1200",
+    "code": "milei2024",
+    "stock": "1",
+    "category": "AntiCaasta",
+    "status": true,
+    "id": 3
+  }
+]
