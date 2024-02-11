@@ -1,6 +1,5 @@
 const form = document.getElementById("formulario");
 const socket = io();
-
 const title = document.getElementById("title");
 const description = document.getElementById("description");
 const price = document.getElementById("price");
@@ -51,12 +50,13 @@ socket.on("firstCarga", (data) => {
 });
 
 socket.on("allProducts", (data) => {
-  console.log(data, "asdasdasd");
+  //verifico si lo que recibi es un array ! ya que desde el server si la peticion para agregar un producto es aceptada voy emitir la data al front
   if (!Array.isArray(data)) {
     alert(data);
     return;
   }
   alert("Producto agregado exitosamente!");
+
   tbody.innerHTML = "";
   data.forEach((producto) => {
     //elimino la key "thumbnails para no mostrarla"
